@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manukkas Jewellery LLC | Since 1982 • UAE</title>
+  <meta name="description" content="Manukkas Jewellery LLC - Timeless beauty, beautifully yours since 1982. Discover gold, diamond, bracelets, pendants, and bespoke craftsmanship across Dubai, Ajman, Umm Al Quwain, and Al Dhaid.">
+  
+  <!-- Favicon / Brand Icon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='46' fill='%230a0907' stroke='%23d4af37' stroke-width='4'/><text x='50%' y='58%' font-size='42' font-family='serif' fill='%23d4af37' text-anchor='middle'>M</text></svg>">
+
+  <!-- Google Fonts: Cinzel, Cormorant Garamond, Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       TOP TICKER / ANNOUNCEMENT BAR
+       ======================================================================== -->
+  <aside class="announcement-bar" aria-label="Announcement">
+    <div class="container announcement-content">
+      <span>SINCE 1982 &bull; CRAFTED WITH CARE &bull; MADE FOR YOUR MOMENTS</span>
+      <div class="gold-rate-pill">
+        <span class="rate-pulse"></span>
+        <span>UAE GOLD RATE (24K): <strong>AED <span id="rate24k">366.50</span>/g</strong></span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ========================================================================
+       HEADER & NAVIGATION
+       ======================================================================== -->
+  <header class="main-header">
+    <div class="container navbar">
+      <!-- Brand Logo -->
+      <a href="#home" class="brand-logo" aria-label="Manukkas Jewellery LLC Home">
+        <div class="brand-crest">M</div>
+        <div class="brand-text">
+          <span class="brand-name">MANUKKAS</span>
+          <span class="brand-sub">JEWELLERY LLC</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#story" class="nav-link">Our Story</a></li>
+          <li><a href="#collections" class="nav-link">Collections</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#why-us" class="nav-link">Why Us</a></li>
+          <li><a href="#branches" class="nav-link">Branches</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Actions -->
+      <div class="nav-actions">
+        <a href="tel:047707115" class="btn btn-outline-gold btn-sm d-none-sm">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          <span>04 770 7115</span>
+        </a>
+        <a href="#branches" class="btn btn-gold btn-sm">Find Branch</a>
+
+        <!-- Hamburger Icon -->
+        <button class="menu-toggle" id="menuToggle" aria-label="Open Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+  <aside class="mobile-drawer" id="mobileDrawer" aria-label="Mobile Navigation">
+    <div>
+      <div class="drawer-header">
+        <div class="brand-text">
+          <span class="brand-name font-display">MANUKKAS</span>
+          <span class="brand-sub">JEWELLERY LLC &bull; 1982</span>
+        </div>
+        <button class="drawer-close" id="drawerClose" aria-label="Close Menu">&times;</button>
+      </div>
+      <ul class="mobile-nav-links">
+        <li><a href="#home" class="mobile-nav-link">Home</a></li>
+        <li><a href="#story" class="mobile-nav-link">Our Story</a></li>
+        <li><a href="#collections" class="mobile-nav-link">Collections</a></li>
+        <li><a href="#services" class="mobile-nav-link">Services</a></li>
+        <li><a href="#why-us" class="mobile-nav-link">Why Manukkas</a></li>
+        <li><a href="#branches" class="mobile-nav-link">Branches</a></li>
+        <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="gold-rate-pill mb-3" style="width: 100%; justify-content: center; margin-bottom: 1.25rem;">
+        <span>Dubai Main: 04 770 7115</span>
+      </div>
+      <a href="https://wa.me/97147707115" class="btn btn-gold" style="width: 100%;" target="_blank" rel="noopener">WhatsApp Concierge</a>
+    </div>
+  </aside>
+
+  <!-- ========================================================================
+       HERO SECTION
+       ======================================================================== -->
+  <section class="hero-section" id="home">
+    <div class="hero-bg-accent"></div>
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span>MANUKKAS JEWELLERY LLC</span>
+        </div>
+        <h1 class="hero-title">
+          Timeless beauty.<br>
+          <span class="gold-gradient-text">Beautifully yours.</span>
+        </h1>
+        <p class="hero-lead">
+          Since 1982, we have been helping customers celebrate love, family and personal achievements with jewellery chosen for its elegance, quality and craftsmanship.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#collections" class="btn btn-gold">
+            <span>Discover Jewellery</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+          <a href="#branches" class="btn btn-glass">
+            <span>Find a branch &rarr;</span>
+          </a>
+        </div>
+
+        <div class="emirates-ribbon">
+          <span class="emirates-label">LOCATIONS:</span>
+          <div class="emirates-items">
+            <span>DUBAI</span>
+            <span class="dot">&bull;</span>
+            <span>AJMAN</span>
+            <span class="dot">&bull;</span>
+            <span>UMM AL QUWAIN</span>
+            <span class="dot">&bull;</span>
+            <span>AL DHAID</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-image-wrapper">
+          <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=1000&q=85" alt="Exquisite Manukkas Gold Jewellery Necklace" loading="eager">
+          <div class="hero-image-overlay"></div>
+        </div>
+
+        <div class="floating-stat-card">
+          <div class="floating-stat-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+          </div>
+          <div>
+            <div class="floating-stat-num">40+ Years</div>
+            <div class="floating-stat-text">Of Legacy & Trust Across UAE</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       LIVE UAE GOLD RATES BAR
+       ======================================================================== -->
+  <section class="gold-rates-section" aria-label="UAE Daily Gold Rates">
+    <div class="container gold-rates-bar">
+      <div class="rate-header-info">
+        <div class="gold-coin-icon">AED</div>
+        <div>
+          <div style="font-family: var(--font-display); font-size: 0.85rem; letter-spacing: 0.1em; color: var(--gold-300);">DAILY UAE GOLD RATES</div>
+          <div style="font-size: 0.72rem; color: var(--text-muted);">Updated <span id="rateTime">Today</span> &bull; Indicative Retail Rate per Gram</div>
+        </div>
+      </div>
+
+      <div class="rates-grid">
+        <div class="rate-item">
+          <span class="rate-karat">24K</span>
+          <span class="rate-val">AED 366.50</span>
+          <span class="rate-unit">/g</span>
+        </div>
+        <div class="rate-item">
+          <span class="rate-karat">22K</span>
+          <span class="rate-val" id="rate22k">339.25</span>
+          <span class="rate-unit">/g</span>
+        </div>
+        <div class="rate-item">
+          <span class="rate-karat">21K</span>
+          <span class="rate-val" id="rate21k">328.00</span>
+          <span class="rate-unit">/g</span>
+        </div>
+        <div class="rate-item">
+          <span class="rate-karat">18K</span>
+          <span class="rate-val" id="rate18k">281.50</span>
+          <span class="rate-unit">/g</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       A LEGACY OF ELEGANCE SECTION
+       ======================================================================== -->
+  <section class="legacy-section" id="legacy">
+    <div class="container legacy-grid">
+      <div class="legacy-image-box">
+        <div class="legacy-img-frame">
+          <img src="https://images.unsplash.com/photo-1573408301185-9146fe634ad0?auto=format&fit=crop&w=900&q=80" alt="Master Goldsmith Handcrafting Gold at Manukkas" loading="lazy">
+        </div>
+        <div class="legacy-badge-overlay">
+          <div class="legacy-badge-year">1982</div>
+          <div class="legacy-badge-label">Established</div>
+        </div>
+      </div>
+
+      <div class="legacy-content">
+        <div class="gold-sub-title">A LEGACY OF ELEGANCE</div>
+        <h2 class="section-title">Jewellery that becomes part of your story.</h2>
+        <p class="section-subtitle">
+          At MANUKKAS, our passion for craftsmanship and timeless beauty is at the heart of everything we do. Every piece is handpicked or designed with care, giving you a beautiful expression of style and sentiment.
+        </p>
+
+        <div class="legacy-pillars">
+          <div class="pillar-item">
+            <h3 class="pillar-title">Artisan Excellence</h3>
+            <p class="pillar-desc">Generations of master goldsmithing refined for modern sensibilities and bespoke perfection.</p>
+          </div>
+          <div class="pillar-item">
+            <h3 class="pillar-title">Authentic Purity</h3>
+            <p class="pillar-desc">100% certified gold and diamonds complying with stringent UAE and international standards.</p>
+          </div>
+        </div>
+
+        <a href="#story" class="btn btn-outline-gold">
+          <span>Discover our story</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       THE COLLECTION SECTION
+       ======================================================================== -->
+  <section class="collection-section" id="collections">
+    <div class="container">
+      <div class="section-header">
+        <div class="gold-sub-title">THE COLLECTION</div>
+        <h2 class="section-title">Pieces for every chapter.</h2>
+        <p class="section-subtitle">
+          From everyday elegance to gifts for unforgettable occasions, explore jewellery designed to celebrate the moments that matter.
+        </p>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="collection-tabs" role="tablist">
+        <button class="tab-btn active" data-filter="all">All Creations</button>
+        <button class="tab-btn" data-filter="signature">Signature</button>
+        <button class="tab-btn" data-filter="classic">Classic</button>
+        <button class="tab-btn" data-filter="bracelets">Bracelets & Bangles</button>
+        <button class="tab-btn" data-filter="delicate">Delicate Pieces</button>
+        <button class="tab-btn" data-filter="pendants">Pendants</button>
+        <button class="tab-btn" data-filter="craftsmanship">Craftsmanship</button>
+      </div>
+
+      <!-- Grid of Items -->
+      <div class="collection-grid">
+        <!-- 01 Signature: Timeless Gold -->
+        <article class="collection-card" data-category="signature">
+          <div class="card-image-box">
+            <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=800&q=80" alt="Timeless Gold Signature Ring" loading="lazy">
+            <span class="card-category-badge">Signature</span>
+          </div>
+          <div class="card-body">
+            <span class="card-subtitle">Manukkas jewellery</span>
+            <h3 class="card-title">Timeless Gold</h3>
+            <p class="card-desc">Signature 22K and 24K yellow gold creations sculpted with heirloom sophistication to stand the test of time.</p>
+            <div class="card-footer">
+              <a href="#" class="card-inquire-link">
+                <span>View Details & Inquire</span>
+                <span>&rarr;</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 02 Classic: Gold Jewellery -->
+        <article class="collection-card" data-category="classic">
+          <div class="card-image-box">
+            <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=800&q=80" alt="Classic Gold Jewellery Necklace" loading="lazy">
+            <span class="card-category-badge">Classic</span>
+          </div>
+          <div class="card-body">
+            <span class="card-subtitle">Gold jewellery</span>
+            <h3 class="card-title">Classic Gold Jewellery</h3>
+            <p class="card-desc">Traditional and contemporary gold necklaces, chains, and sets crafted to commemorate unforgettable family milestones.</p>
+            <div class="card-footer">
+              <a href="#" class="card-inquire-link">
+                <span>View Details & Inquire</span>
+                <span>&rarr;</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 03 Details: Bracelets & Bangles -->
+        <article class="collection-card" data-category="bracelets">
+          <div class="card-image-box">
+            <img src="https://images.unsplash.com/photo-1611591475878-c0b7ec199464?auto=format&fit=crop&w=800&q=80" alt="Gold Bracelets and Bangles" loading="lazy">
+            <span class="card-category-badge">Details</span>
+          </div>
+          <div class="card-body">
+            <span class="card-subtitle">Gold bracelet</span>
+            <h3 class="card-title">Bracelets & Bangles</h3>
+            <p class="card-desc">Intricately etched gold bangles, cuffs, and flexible links that bring grace, shimmer, and effortless poise to your wrist.</p>
+            <div class="card-footer">
+              <a href="#" class="card-inquire-link">
+                <span>View Details & Inquire</span>
+                <span>&rarr;</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 04 Modern: Delicate Pieces -->
+        <article class="collection-card" data-category="delicate">
+          <div class="card-image-box">
+            <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=800&q=80" alt="Modern Delicate Gold Jewellery" loading="lazy">
+            <span class="card-category-badge">Modern</span>
+          </div>
+          <div class="card-body">
+            <span class="card-subtitle">Delicate jewellery</span>
+            <h3 class="card-title">Delicate Pieces</h3>
+            <p class="card-desc">Subtle, lightweight gold designs tailored for the modern lifestyle—ideal for layering and everyday grace.</p>
+            <div class="card-footer">
+              <a href="#" class="card-inquire-link">
+                <span>View Details & Inquire</span>
+                <span>&rarr;</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 05 Everyday: Pendants -->
+        <article class="collection-card" data-category="pendants">
+          <div class="card-image-box">
+            <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=800&q=80" alt="Gold Pendant Jewellery" loading="lazy">
+            <span class="card-category-badge">Everyday</span>
+          </div>
+          <div class="card-body">
+            <span class="card-subtitle">Gold pendant jewellery</span>
+            <h3 class="card-title">Pendants</h3>
+            <p class="card-desc">Captivating lockets, gem-accented gold motifs, and daily pendants engineered for comfort and refined charm.</p>
+            <div class="card-footer">
+              <a href="#" class="card-inquire-link">
+                <span>View Details & Inquire</span>
+                <span>&rarr;</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 06 Artisanal: Jewellery craftsmanship -->
+        <article class="collection-card" data-category="craftsmanship">
+          <div class="card-image-box">
+            <img src="https://images.unsplash.com/photo-1531995811006-35cb42e1a022?auto=format&fit=crop&w=800&q=80" alt="Jewellery Craftsmanship Artisan Work" loading="lazy">
+            <span class="card-category-badge">Artisanal</span>
+          </div>
+          <div class="card-body">
+            <span class="card-subtitle">Jewellery craftsmanship</span>
+            <h3 class="card-title">Bespoke Masterpieces</h3>
+            <p class="card-desc">Custom haute joaillerie handcrafted by master artisans, manifesting your singular vision into everlasting gold.</p>
+            <div class="card-footer">
+              <a href="#" class="card-inquire-link">
+                <span>View Details & Inquire</span>
+                <span>&rarr;</span>
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       OUR STORY SECTION
+       ======================================================================== -->
+  <section class="story-section" id="story">
+    <div class="container story-grid">
+      <div class="story-left">
+        <div class="gold-sub-title">OUR STORY</div>
+        <h2 class="section-title">Since 1982, a name built on trust.</h2>
+        <p class="section-subtitle" style="margin-bottom: 1.5rem;">
+          Founded by <strong>Moidu Kuruvattinhalil</strong>, Manukkas Jewellery has served customers with prestigious collections for celebrating love, family and personal achievements.
+        </p>
+        <p style="color: var(--text-soft); font-size: 0.95rem; line-height: 1.7; margin-bottom: 2rem;">
+          Our dedication to quality and customer satisfaction remains the foundation of our success. We aim to make every visit as memorable as the jewellery itself.
+        </p>
+
+        <div class="story-milestones">
+          <div class="milestone-item">
+            <div class="milestone-year">1982</div>
+            <div class="milestone-info">
+              <h4>The Inception</h4>
+              <p>Founded on foundational principles of honesty, genuine gold purity, and warm hospitality.</p>
+            </div>
+          </div>
+          <div class="milestone-item">
+            <div class="milestone-year">2000s</div>
+            <div class="milestone-info">
+              <h4>Expansion Across UAE</h4>
+              <p>Opening flagship doors in Dubai, Ajman, Umm Al Quwain, and Sharjah's Al Dhaid.</p>
+            </div>
+          </div>
+          <div class="milestone-item">
+            <div class="milestone-year">2023</div>
+            <div class="milestone-info">
+              <h4>Best Jewellery of the Year</h4>
+              <p>Recognized by the Visionary Leader Awards for peerless customer dedication and retail excellence.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="story-right">
+        <div class="founder-quote-box">
+          <div class="quote-icon-decor">&ldquo;</div>
+          <p class="founder-lead-quote">
+            &ldquo;Jewellery is never merely precious metal—it is the tangible embodiment of memories, blessings, and lifelong devotion. Every creation we deliver carries the honour of our family to yours.&rdquo;
+          </p>
+          <div class="founder-signature">
+            <div class="founder-name">MOIDU KURUVATTINHALIL</div>
+            <div class="founder-title">Founder, Manukkas Jewellery LLC</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       OUR SERVICES SECTION
+       ======================================================================== -->
+  <section class="services-section" id="services">
+    <div class="container">
+      <div class="section-header">
+        <div class="gold-sub-title">OUR SERVICES</div>
+        <h2 class="section-title">More than jewellery.</h2>
+        <p class="section-subtitle">
+          Professional services designed to help you care for, personalise and make the most of your jewellery.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <!-- 01 Jewellery Design -->
+        <div class="service-card">
+          <span class="service-number">01</span>
+          <h3 class="service-title">Jewellery Design</h3>
+          <p class="service-desc">Custom jewellery creation to suit your specific needs, personal celebrations, and bridal dreams.</p>
+        </div>
+
+        <!-- 02 Repair & Maintenance -->
+        <div class="service-card">
+          <span class="service-number">02</span>
+          <h3 class="service-title">Repair & Maintenance</h3>
+          <p class="service-desc">From resizing to polishing and restoring old jewellery back to its original brilliant lustre.</p>
+        </div>
+
+        <!-- 03 Appraisal Services -->
+        <div class="service-card">
+          <span class="service-number">03</span>
+          <h3 class="service-title">Appraisal Services</h3>
+          <p class="service-desc">Professional evaluation of your jewellery for resale purposes, insurance certification, and purity audits.</p>
+        </div>
+
+        <!-- 04 Trade-In & Buyback -->
+        <div class="service-card">
+          <span class="service-number">04</span>
+          <h3 class="service-title">Trade-In & Buyback</h3>
+          <p class="service-desc">Exchange or sell old jewellery for something new and exciting at transparent, market-leading rates.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       WHY MANUKKAS SECTION
+       ======================================================================== -->
+  <section class="why-section" id="why-us">
+    <div class="container">
+      <div class="section-header">
+        <div class="gold-sub-title">WHY MANUKKAS</div>
+        <h2 class="section-title">Craftsmanship. Service. Confidence.</h2>
+      </div>
+
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="why-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+          </div>
+          <h3 class="why-title">Expert Craftsmanship</h3>
+          <p class="why-desc">Precision from experienced artisans who pour decades of goldsmith mastery into every detail.</p>
+        </div>
+
+        <div class="why-card">
+          <div class="why-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+          </div>
+          <h3 class="why-title">Personalised Service</h3>
+          <p class="why-desc">Jewellery selected around your needs, personal taste, and life’s singular moments.</p>
+        </div>
+
+        <div class="why-card">
+          <div class="why-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          </div>
+          <h3 class="why-title">Ethical Sourcing</h3>
+          <p class="why-desc">Responsible sourcing is part of our commitment to sustainability and global purity standards.</p>
+        </div>
+
+        <div class="why-card">
+          <div class="why-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M8 14s1.5 2 4 2 4-2 4-2"></path><line x1="9" y1="9" x2="9.01" y2="9"></line><line x1="15" y1="9" x2="15.01" y2="9"></line></svg>
+          </div>
+          <h3 class="why-title">Customer Satisfaction</h3>
+          <p class="why-desc">Your happiness remains our priority with post-purchase care and dedicated support.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       RECOGNITION / AWARD SECTION
+       ======================================================================== -->
+  <section class="recognition-section" aria-label="Awards & Accolades">
+    <div class="container">
+      <div class="award-box">
+        <div class="award-trophy">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M10 14.66V17c0 .55-.45 1-1 1H7v4h10v-4h-2c-.55 0-1-.45-1-1v-2.34"></path><path d="M6 4h12v7a6 6 0 0 1-12 0V4z"></path></svg>
+        </div>
+        <div class="gold-sub-title" style="justify-content: center;">MANUKKAS ACHIEVEMENT &bull; RECOGNITION</div>
+        <h2 class="award-title">Best Jewellery of the Year 2023</h2>
+        <p class="award-citation">
+          &ldquo;Awarded the prestigious Best Jewellery of the Year 2023 by the Visionary Leader Awards.&rdquo;
+        </p>
+        <div class="award-footer-badge">
+          <span>Visionary Leader Awards &bull; United Arab Emirates</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       VISIT MANUKKAS (BRANCH LOCATIONS)
+       ======================================================================== -->
+  <section class="branches-section" id="branches">
+    <div class="container">
+      <div class="section-header">
+        <div class="gold-sub-title">VISIT MANUKKAS</div>
+        <h2 class="section-title">Find us across the UAE.</h2>
+        <p class="section-subtitle">
+          Choose the branch closest to you and contact the team directly.
+        </p>
+      </div>
+
+      <!-- Emirate Filter Tabs -->
+      <div class="branch-filter-tabs">
+        <button class="branch-filter-btn active" data-emirate="all">All Branches (5)</button>
+        <button class="branch-filter-btn" data-emirate="dubai">Dubai</button>
+        <button class="branch-filter-btn" data-emirate="aldhaid">Al Dhaid (Sharjah)</button>
+        <button class="branch-filter-btn" data-emirate="ajman">Ajman</button>
+        <button class="branch-filter-btn" data-emirate="uaq">Umm Al Quwain</button>
+      </div>
+
+      <!-- Branches Grid -->
+      <div class="branches-grid">
+        <!-- 01 Dubai -->
+        <div class="branch-card" data-emirate="dubai">
+          <div class="branch-card-header">
+            <span class="branch-number">01</span>
+            <span class="branch-city-tag">DUBAI</span>
+          </div>
+          <h3 class="branch-name">Dubai</h3>
+          <p class="branch-address">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            <span>International City, Greece Cluster K07, Shop #8</span>
+          </p>
+          <div class="branch-contact-bar">
+            <a href="tel:047707115" class="branch-phone-link">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              <span>04 770 7115</span>
+            </a>
+            <div class="branch-actions">
+              <a href="tel:047707115" class="btn btn-gold btn-sm">Call Now</a>
+              <a href="https://maps.google.com/?q=Manukkas+Jewellery+International+City+Dubai" target="_blank" rel="noopener" class="btn btn-glass btn-sm">Directions</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 02 Al Dhaid -->
+        <div class="branch-card" data-emirate="aldhaid">
+          <div class="branch-card-header">
+            <span class="branch-number">02</span>
+            <span class="branch-city-tag">SHARJAH</span>
+          </div>
+          <h3 class="branch-name">Al Dhaid</h3>
+          <p class="branch-address">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            <span>Opp. Al Ansari Exchange, Sharjah</span>
+          </p>
+          <div class="branch-contact-bar">
+            <a href="tel:068827055" class="branch-phone-link">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              <span>06 8827 055</span>
+            </a>
+            <div class="branch-actions">
+              <a href="tel:068827055" class="btn btn-gold btn-sm">Call Now</a>
+              <a href="https://maps.google.com/?q=Manukkas+Jewellery+Al+Dhaid+Sharjah" target="_blank" rel="noopener" class="btn btn-glass btn-sm">Directions</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 03 Ajman -->
+        <div class="branch-card" data-emirate="ajman">
+          <div class="branch-card-header">
+            <span class="branch-number">03</span>
+            <span class="branch-city-tag">AJMAN</span>
+          </div>
+          <h3 class="branch-name">Ajman</h3>
+          <p class="branch-address">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            <span>Lucky Round About, Near Al Ansari Exchange</span>
+          </p>
+          <div class="branch-contact-bar">
+            <a href="tel:067677273" class="branch-phone-link">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              <span>06 7677 273</span>
+            </a>
+            <div class="branch-actions">
+              <a href="tel:067677273" class="btn btn-gold btn-sm">Call Now</a>
+              <a href="https://maps.google.com/?q=Manukkas+Jewellery+Lucky+Roundabout+Ajman" target="_blank" rel="noopener" class="btn btn-glass btn-sm">Directions</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 04 Noor Manukkas -->
+        <div class="branch-card" data-emirate="ajman">
+          <div class="branch-card-header">
+            <span class="branch-number">04</span>
+            <span class="branch-city-tag">JURF INDUSTRIAL &bull; AJMAN</span>
+          </div>
+          <h3 class="branch-name">Noor Manukkas</h3>
+          <p class="branch-address">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            <span>Dhana Complex, Shop 23, Jurf Industrial Zone 1, Opp. Lucky Centre, Ajman</span>
+          </p>
+          <div class="branch-contact-bar">
+            <a href="tel:0563820916" class="branch-phone-link">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              <span>056 382 0916</span>
+            </a>
+            <div class="branch-actions">
+              <a href="tel:0563820916" class="btn btn-gold btn-sm">Call Now</a>
+              <a href="https://maps.google.com/?q=Noor+Manukkas+Jewellery+Jurf+Industrial+Zone+1+Ajman" target="_blank" rel="noopener" class="btn btn-glass btn-sm">Directions</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 05 Umm Al Quwain -->
+        <div class="branch-card" data-emirate="uaq">
+          <div class="branch-card-header">
+            <span class="branch-number">05</span>
+            <span class="branch-city-tag">UMM AL QUWAIN</span>
+          </div>
+          <h3 class="branch-name">Umm Al Quwain</h3>
+          <p class="branch-address">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            <span>Nesto Hypermarket, Umm Al Quwain</span>
+          </p>
+          <div class="branch-contact-bar">
+            <a href="tel:087675225" class="branch-phone-link">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              <span>08 767 5225</span>
+            </a>
+            <div class="branch-actions">
+              <a href="tel:087675225" class="btn btn-gold btn-sm">Call Now</a>
+              <a href="https://maps.google.com/?q=Manukkas+Jewellery+Nesto+Hypermarket+Umm+Al+Quwain" target="_blank" rel="noopener" class="btn btn-glass btn-sm">Directions</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       LET'S TALK / CTA & INQUIRY FORM
+       ======================================================================== -->
+  <section class="contact-section" id="contact">
+    <div class="container contact-grid">
+      <div class="contact-info-col">
+        <div class="gold-sub-title">LET'S TALK</div>
+        <h2>Ready to find something beautiful?</h2>
+        <p class="contact-lead">
+          For product enquiries, branch information and jewellery services, get in touch with Manukkas Jewellery.
+        </p>
+
+        <div class="contact-quick-buttons">
+          <a href="#branches" class="btn btn-gold">
+            <span>View Branches</span>
+          </a>
+          <a href="tel:047707115" class="btn btn-outline-gold">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            <span>Call Dubai</span>
+          </a>
+        </div>
+
+        <div class="contact-channels">
+          <div class="channel-item">
+            <div class="channel-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            </div>
+            <div>
+              <div class="channel-title">Main Telephone</div>
+              <div class="channel-value"><a href="tel:047707115">04 770 7115</a></div>
+            </div>
+          </div>
+
+          <div class="channel-item">
+            <div class="channel-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            </div>
+            <div>
+              <div class="channel-title">Emirates Network</div>
+              <div class="channel-value">Dubai &bull; Ajman &bull; Umm Al Quwain &bull; Al Dhaid</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Message Form -->
+      <div class="contact-form-box">
+        <h3 class="form-title">Send an Enquiry</h3>
+        <p class="form-subtitle">Connect with our jewellery specialists for appointments and custom designs.</p>
+        
+        <form id="inquiryForm">
+          <div class="form-group">
+            <label class="form-label" for="clientName">Your Name</label>
+            <input type="text" id="clientName" class="form-input" placeholder="e.g. Fatima Al Mansoori" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="clientPhone">Phone / WhatsApp Number</label>
+            <input type="tel" id="clientPhone" class="form-input" placeholder="+971 50 123 4567" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="clientBranch">Preferred Branch</label>
+            <select id="clientBranch" class="form-select">
+              <option value="Dubai (International City)">Dubai — International City</option>
+              <option value="Al Dhaid (Sharjah)">Al Dhaid — Opp. Al Ansari Exchange</option>
+              <option value="Ajman (Lucky Roundabout)">Ajman — Lucky Round About</option>
+              <option value="Noor Manukkas (Jurf Industrial 1)">Noor Manukkas — Jurf Industrial Zone 1</option>
+              <option value="Umm Al Quwain (Nesto)">Umm Al Quwain — Nesto Hypermarket</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="clientMsg">Inquiry or Service Needed</label>
+            <textarea id="clientMsg" class="form-textarea" placeholder="Tell us about the design, gold purchase, repair, or trade-in you wish to discuss..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-gold" style="width: 100%;">
+            <span>Submit Enquiry</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       FOOTER
+       ======================================================================== -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <!-- Brand Info -->
+        <div>
+          <a href="#home" class="brand-logo" style="margin-bottom: 1rem;">
+            <div class="brand-crest">M</div>
+            <div class="brand-text">
+              <span class="brand-name">MANUKKAS</span>
+              <span class="brand-sub">JEWELLERY LLC</span>
+            </div>
+          </a>
+          <p class="footer-brand-desc">
+            Since 1982, Manukkas Jewellery LLC has brought elegance, certified gold purity, and bespoke craftsmanship to cherished celebrations across the United Arab Emirates.
+          </p>
+          <div style="color: var(--gold-400); font-size: 0.85rem; font-weight: 500;">
+            Since 1982
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#story">Our Story</a></li>
+            <li><a href="#collections">The Collections</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#branches">Branches</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- UAE Locations -->
+        <div>
+          <h4 class="footer-col-title">UAE Branches</h4>
+          <div class="footer-locations-list">
+            <div><strong>Dubai:</strong> International City K07</div>
+            <div><strong>Al Dhaid:</strong> Sharjah</div>
+            <div><strong>Ajman:</strong> Lucky Round About</div>
+            <div><strong>Noor Manukkas:</strong> Jurf Industrial 1</div>
+            <div><strong>Umm Al Quwain:</strong> Nesto Hypermarket</div>
+          </div>
+        </div>
+
+        <!-- Contact Direct -->
+        <div>
+          <h4 class="footer-col-title">Direct Contact</h4>
+          <p style="font-size: 0.9rem; color: var(--text-soft); margin-bottom: 0.5rem;">Telephone:</p>
+          <a href="tel:047707115" style="color: var(--gold-300); font-size: 1.15rem; font-weight: 600; display: block; margin-bottom: 1rem;">04 770 7115</a>
+          <p style="font-size: 0.82rem; color: var(--text-muted); line-height: 1.5;">
+            Dubai &bull; Ajman &bull; Umm Al Quwain &bull; Al Dhaid
+          </p>
+        </div>
+      </div>
+
+      <!-- Bottom Copyright Bar -->
+      <div class="footer-bottom-bar">
+        <div>
+          &copy; <span id="currentYear">2026</span> Manukkas Jewellery LLC. All rights reserved.
+        </div>
+        <div style="letter-spacing: 0.1em; font-size: 0.78rem;">
+          CRAFTED WITH CARE &bull; MADE FOR YOUR MOMENTS
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       MODAL: ITEM QUICK VIEW & WHATSAPP ENQUIRY
+       ======================================================================== -->
+  <div class="modal-backdrop" id="quickViewModal">
+    <div class="modal-container">
+      <button class="modal-close-btn" id="modalClose" aria-label="Close modal">&times;</button>
+      <div class="modal-content-body">
+        <div style="height: 260px; border-radius: var(--radius-md); overflow: hidden; margin-bottom: 1.5rem; border: 1px solid var(--gold-border);">
+          <img id="modalImage" src="" alt="Jewellery Detail" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <div class="gold-sub-title no-lines" id="modalCategory">MANUKKAS SIGNATURE</div>
+        <h3 class="card-title" id="modalTitle" style="font-size: 1.8rem; margin-bottom: 0.75rem;">Jewellery Piece</h3>
+        <p id="modalDesc" style="color: var(--text-soft); font-size: 0.92rem; line-height: 1.6; margin-bottom: 2rem;">Piece description and purity details.</p>
+        
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+          <a href="#" id="modalWhatsAppBtn" class="btn btn-gold" target="_blank" rel="noopener" style="flex: 1;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+            <span>Inquire on WhatsApp</span>
+          </a>
+          <a href="#contact" class="btn btn-outline-gold" onclick="document.getElementById('quickViewModal').classList.remove('active'); document.body.style.overflow='';">
+            <span>Book Consultation</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating WhatsApp Quick Button -->
+  <a href="https://wa.me/97147707115?text=Hello%20Manukkas%20Jewellery%20LLC,%20I%20would%20like%20to%20inquire%20about%20your%20jewellery%20collections." class="floating-whatsapp" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.42 0-2.82-.37-4.06-1.07l-.29-.16-3.11.82.83-3.03-.19-.31c-.77-1.25-1.18-2.7-1.18-4.2 0-4.54 3.7-8.24 8.24-8.24m4.52 11.66c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.03-1.24-.75-.67-1.26-1.5-1.41-1.75-.15-.25-.02-.39.11-.51.11-.11.25-.29.38-.44.12-.14.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.34-.76-1.84-.2-.49-.4-.42-.56-.43h-.47c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.12.17 1.77 2.7 4.29 3.78.6.26 1.07.41 1.43.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.07-.12-.23-.19-.48-.31z"/>
+    </svg>
+  </a>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
